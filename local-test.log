@@ -1,0 +1,26 @@
+# interpreter: /c/Users/fgghk/Downloads/completing courses/projects-ours/.venv/Scripts/python.exe
+# command: "/c/Users/fgghk/Downloads/completing courses/projects-ours/.venv/Scripts/python.exe" test_local.py
+
+three-math-games local tests
+==============================================================
+PASS  NumberHunt picks a secret in [1,100]
+PASS  optimal bound for 1..100 is 7   [7]
+PASS  bisection solved all 39 seeded games   [unsolved=[]]
+PASS  bisection always solves within the optimal bound   [worst=7 over 39 seeds]
+PASS  range width shrinks on every bisection move   [[4, 1, 0]]
+PASS  a guess just below reports 'too low' and narrows upward to the secret   [{'done': False, 'guess': 59, 'outcome': 'too low', 'remaining': (60, 100), 'range_width': 41, 'guesses_used': 1}]
+PASS  a guess just above reports 'too high' and narrows downward to the secret   [{'done': False, 'guess': 61, 'outcome': 'too high', 'remaining': (60, 60), 'range_width': 1, 'guesses_used': 2}]
+PASS  EquationSolve: 50 generated equations all consistent & solvable
+PASS  EquationSolve: off-by-one answer is rejected
+PASS  EquationSolve: prompt contains the three numbers   [5x + (0) = 45]
+PASS  EquationSolve.play() advances to a fresh equation   [1]
+PASS  SeriesSum: 0,1 -> next six are 1,2,3,5,8,13   [[1, 2, 3, 5, 8, 13]]
+PASS  SeriesSum: 2,3 -> 5,8,13,21,34   [[5, 8, 13, 21, 34]]
+PASS  SeriesSum matches an independent loop over 20 terms   [[1, 2, 3, 5, 8, 13]...]
+PASS  SeriesSum matches Binet's formula (F2..F12)   [[1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144]]
+PASS  SeriesSum: exact prediction scores exact   [1,1 -> 2,3,5,8,13]
+PASS  SeriesSum: a wrong middle term is counted wrong   [only term 2 wrong]
+PASS  play_random returns a scored result with a total   [{'predicted': [32, 22, 36, 37], 'truth': [6, 11, 17, 28], 'correct': 0, 'total': 4, 'exact': False}]
+PASS  play_all prints a line for each of the three games   [Three Math Games — one round of each]
+==============================================================
+SUMMARY: 19 passed, 0 failed
